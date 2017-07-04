@@ -1,0 +1,101 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe WPC,Segoe UI,HelveticaNeue-Light,Ubuntu,Droid Sans,sans-serif;
+    padding: 0;
+}
+html {
+  font-size: 62.5%; /* make 1rem = 10px */
+}
+body {
+    font-size: 16px;
+}
+
+.hidden {
+    display: none !important;
+}
+.disabled {
+    pointer-events:none;
+}
+.btn {
+    cursor: pointer;
+}
+
+.media {
+    display: flex;
+    align-items: flex-start;
+}
+.media .media-image {
+    margin: 0 1em 0 0;
+}
+.media .media-content {
+    flex: 1;
+}
+.media.right {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.media.right .media-image {
+    margin: 0 0 0 1em;
+}
+
+#ag-search-view {
+    position: relative;
+    height: 100%;
+    overflow-y: auto;
+}
+
+#search-history {
+    padding: 0;
+}
+
+.ag-search-entry {
+    padding: 1em;
+    position: relative;
+    border-bottom: 1px solid hsla(0,0%,100%,0.3);
+}
+
+.ag-search-entry .media-content {
+    position: relative;
+    overflow: hidden;
+}
+
+.ag-search-entry .search-subject-link {
+    display: block;
+    height: 1em;
+    position: absolute;
+    width: 100%;
+    color: transparent;
+}
+
+.ag-search-entry .search-subject-link:hover ~ .search-subject,
+.ag-search-entry .search-subject-link ~ .search-subject:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.search-subject {
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.error-box {
+    text-align: center;
+    color: #c33;
+    padding: 3rem;
+}
+
+.error-box .error-title {
+    font-weight: lighter;
+}
+
+.error-box .error-details {
+    font-weight: normal;
+}
