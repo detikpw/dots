@@ -95,3 +95,8 @@ export NVM_DIR="/home/hijup-dw/.nvm"
 # Set up dot files
 
 alias dots='git --git-dir=$HOME/.dots.git/ --work-tree=$HOME'
+
+export EDITOR='vim'
+
+# Use tmuxinator
+source ~/tmuxinator.zsh
