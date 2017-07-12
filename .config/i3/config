@@ -184,6 +184,7 @@ exec --no-startup-id compton --config ~/.config/i3/compton.conf -b
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec --no-startup-id gnome-settings-daemon
 exec --no-startup-id guake
+exec --no-startup-id ~/redis-3.0.5/src/redis-server --daemonize yes
 
 # Lock screen
 bindsym $mod+Shift+l exec lock -gp -- scrot -z 
