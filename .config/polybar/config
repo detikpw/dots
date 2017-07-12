@@ -222,7 +222,7 @@ label-disconnected-foreground = ${colors.red}
 
 [module/wired-network]
 type = internal/network
-interface = wlx90610c2aa0e1
+interface = enp1s0
 
 format-connected-prefix = " "
 format-disconnected-prefix = " "
