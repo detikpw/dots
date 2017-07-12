@@ -100,3 +100,16 @@ export EDITOR='vim'
 
 # Use tmuxinator
 source ~/tmuxinator.zsh
+
+alias k='kubectl'
+
+# git
+ alias gpo='git push origin'
+ alias gs='git status'
+ alias gst='git stash'
+ alias gpl='git pull origin'
+ alias gc='git checkout'
+ alias gcb='git checkout -b'
+ alias gb='git blame'
+ alias gd='git diff'
+ alias gds='git diff --staged'
