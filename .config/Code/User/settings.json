@@ -1,3 +1,5 @@
 {
-    "workbench.colorTheme": "Default High Contrast"
+    "workbench.colorTheme": "Visual Studio Dark",
+    "window.zoomLevel": -2,
+    "workbench.editor.showTabs": false
 }
