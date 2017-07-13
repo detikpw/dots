@@ -39,7 +39,7 @@ tray-maxsize = 16
 
 modules-left = i3 xwindow
 modules-center =
-modules-right = keyboard volume battery wireless-network wired-network calendar clock powermenu
+modules-right = volume battery wired-network wireless-network calendar clock powermenu
 
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
@@ -205,7 +205,7 @@ label-visible-padding = 1
 
 [module/wireless-network]
 type = internal/network
-interface = wlp3s0
+interface = wlx90610c2aa0e1
 
 format-connected-prefix = " "
 format-disconnected-prefix = " "
