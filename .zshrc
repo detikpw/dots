@@ -7,7 +7,7 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="refined"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -113,3 +113,12 @@ alias k='kubectl'
  alias gb='git blame'
  alias gd='git diff'
  alias gds='git diff --staged'
+
+ export ANDROID_HOME="/home/hijup-dw/Android/Sdk"
+ export PATH=${PATH}:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
+
+[[ -s "/home/hijup-dw/.gvm/scripts/gvm" ]] && source "/home/hijup-dw/.gvm/scripts/gvm"
+
+export GOROOT=/home/hijup-dw/.gvm/gos/go1.4/
+
+export GOPATH=/home/hijup-dw/projek/mono/src
