@@ -5,6 +5,7 @@
 ;           ██       ██████  ███████ ██    ██████  ██   ██ ██   ██
 
 [colors]
+main-color = #528BFF
 background = #282C34
 foreground = #ABB2BF
 foreground-alt= #528BFF
@@ -51,7 +52,7 @@ label = %title%
 label-maxlen = 75
 
 format-foreground = ${colors.background}
-format-background = ${colors.magenta}
+format-background = ${colors.main-color}
 format-prefix = " "
 format-suffix = " "
 
@@ -73,7 +74,7 @@ time = %H:%M:%S
 
 format =  <label>
 format-prefix = " "
-format-foreground = ${colors.orange}
+format-foreground = ${colors.main-color}
 
 label = %time%
 
@@ -85,7 +86,7 @@ interval = 1.0
 date = %d/%m/%y
 
 format = %{T1} <label>
-format-foreground = ${colors.orange}
+format-foreground = ${colors.main-color}
 format-prefix = " "
 
 label = %date%
@@ -94,7 +95,7 @@ label = %date%
 type = internal/volume
 master-mixer = Master
 
-format-volume-foreground = ${colors.green}
+format-volume-foreground = ${colors.main-color}
 
 format-volume = %{T1} <label-volume>
 
@@ -111,11 +112,11 @@ type = custom/menu
 format-prefix = " "
 
 label-open = 
-label-open-foreground = ${colors.foreground-alt}
+label-open-foreground = ${colors.main-color}
 label-close = 
 label-close-foreground = ${colors.red}
 label-separator = |
-label-separator-foreground = ${colors.foreground-alt}
+label-separator-foreground = ${colors.main-color}
 
 menu-0-0 = reboot
 menu-0-0-exec = menu-open-1
@@ -156,7 +157,7 @@ label-discharging = %percentage%%
 label-full = 
 
 format-charging = <animation-charging> <label-charging>
-format-charging-foreground = ${colors.foreground-alt}
+format-charging-foreground = ${colors.main-color}
 
 format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-foreground = ${colors.orange}
@@ -189,7 +190,7 @@ wrapping-scroll = true
 
 label-focused = %index%
 label-focused-foreground = ${colors.background}
-label-focused-background = ${colors.foreground-alt}
+label-focused-background = ${colors.main-color}
 label-focused-padding = 1
 
 label-unfocused = %index%
@@ -215,7 +216,7 @@ format-connected = <label-connected>
 format-disconnected = <label-disconnected>
 
 label-connected =  %essid%
-label-connected-foreground = ${colors.foreground-alt}
+label-connected-foreground = ${colors.main-color}
 
 label-disconnected =  [not connected]
 label-disconnected-foreground = ${colors.red}
@@ -232,7 +233,7 @@ format-connected = <label-connected>
 format-disconnected = <label-disconnected>
 
 label-connected =  %local_ip% %downspeed:9%
-label-connected-foreground = ${colors.foreground-alt}
+label-connected-foreground = ${colors.main-color}
 
 label-disconnected =  [not plugged]
 label-disconnected-foreground = ${colors.red}
