@@ -167,6 +167,7 @@ bindsym $mod+r mode "resize"
 for_window [instance="guake"] floating enable
 for_window [class="Nitrogen"] floating enable sticky enable border normal
 for_window [class="Lxappearance"] floating enable border normal
+for_window [class="update-manager"] floating enable sticky enable border normal
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+ #increase sound volume
