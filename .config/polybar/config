@@ -232,7 +232,7 @@ format-connected = <label-connected>
 
 format-disconnected = <label-disconnected>
 
-label-connected =  %local_ip% %downspeed:9%
+label-connected =  %downspeed:9%
 label-connected-foreground = ${colors.main-color}
 
 label-disconnected =  [not plugged]
