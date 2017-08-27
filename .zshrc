@@ -122,3 +122,10 @@ alias k='kubectl'
 export GOROOT=/home/hijup-dw/.gvm/gos/go1.4/
 
 export GOPATH=/home/hijup-dw/projek/mono/src
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+
+alias rubocopin="git diff --name-only --cached | xargs -I {} rubocop --auto-correct -f progress {}"
+
+alias prod='$HOME/.privacy/prod.sh'
+alias dev='$HOME/.privacy/dev.sh'
