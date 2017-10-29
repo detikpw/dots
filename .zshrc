@@ -129,3 +129,4 @@ alias rubocopin="git diff --name-only --cached | xargs -I {} rubocop --auto-corr
 
 alias prod='$HOME/.privacy/prod.sh'
 alias dev='$HOME/.privacy/dev.sh'
+alias gu='bin/gulp'
