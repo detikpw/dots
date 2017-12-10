@@ -121,7 +121,8 @@ alias k='kubectl'
 
 export GOROOT=/home/hijup-dw/.gvm/gos/go1.4/
 
-export GOPATH=/home/hijup-dw/projek/mono/src
+export GOPATH=$HOME/belajar/udemy/go
+
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 
@@ -129,4 +130,8 @@ alias rubocopin="git diff --name-only --cached | xargs -I {} rubocop --auto-corr
 
 alias prod='$HOME/.privacy/prod.sh'
 alias dev='$HOME/.privacy/dev.sh'
+alias staging='$HOME/.privacy/staging.sh'
 alias gu='bin/gulp'
+if [ $XDG_CURRENT_DESKTOP="i3" ]; then
+ export XDG_CURRENT_DESKTOP="GNOME"
+fi
