@@ -169,6 +169,9 @@ for_window [class="Nitrogen"] floating enable sticky enable border normal
 for_window [class="Lxappearance"] floating enable border normal
 for_window [class="update-manager"] floating enable sticky enable border normal
 
+# VS code open in workspace 2
+assign [class="Code"] 2
+
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+ #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%- #decrease sound volume
