@@ -189,6 +189,7 @@ exec --no-startup-id xautolock -time 10 -locker blurlock
 exec --no-startup-id gnome-settings-daemon
 exec --no-startup-id guake
 exec --no-startup-id ~/redis-3.0.5/src/redis-server --daemonize yes
+exec --no-startup-id bash source ~/.privacy/hijup_env.sh
 exec_always --no-startup-id $HOME/script/wallpaper-randomizer.sh
 # Caused by gnome 3.20
 exec --no-startup-id xinput set-prop "ETPS/2 Elantech Touchpad" "libinput Natural Scrolling Enabled" 1
