@@ -36,6 +36,9 @@ background = ${colors.background}
 foreground = ${colors.foreground}
 
 ;tray-position = center
+
+monitor = ${env:MONITOR:}
+
 tray-maxsize = 16
 
 modules-left = i3 xwindow
