@@ -221,3 +221,4 @@ bindsym $mod+b exec thunar
 
 #Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+bindsym $mod+p exec $HOME/.config/polybar/launch.sh
