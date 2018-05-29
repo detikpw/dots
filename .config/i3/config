@@ -189,14 +189,20 @@ exec --no-startup-id xautolock -time 10 -locker blurlock
 exec --no-startup-id gnome-settings-daemon
 exec --no-startup-id guake
 exec --no-startup-id ~/redis-3.0.5/src/redis-server --daemonize yes
-exec --no-startup-id bash source ~/.privacy/hijup_env.sh
-exec_always --no-startup-id $HOME/script/wallpaper-randomizer.sh
+exec --no-startup-id $HOME/script/wallpaper-randomizer.sh
+# where Pictures/Wallpapers is the directory you would want to get random wallpapers from
+exec_always --no-startup-id betterlockscreen -u ~/Pictures/Wallpapers
+
+# add this only if you want to use same random image as desktop background too
+# it might not work as it takes few seconds for images to be cached,
+# try adding delay of 5 seconds if thats the case
+exec_always --no-startup-id betterlockscreen -w
 # Caused by gnome 3.20
 exec --no-startup-id xinput set-prop "ETPS/2 Elantech Touchpad" "libinput Natural Scrolling Enabled" 1
 exec --no-startup-id xinput set-prop "ETPS/2 Elantech Touchpad" "libinput Tapping Enabled" 1
 
 # Lock screen
-bindsym $mod+Shift+l exec lock -gp -- scrot -z 
+bindsym $mod+Shift+l exec betterlockscreen -l
 
 # i3 gaps
 for_window [class="^.*"] border pixel 1
