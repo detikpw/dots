@@ -44,11 +44,21 @@ bindsym $mod+d exec rofi -show run -lines 3 -bw 1 -font "Cantarell 18" -opacity 
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # define colors used
-set $bg-color 	         #2f343f
+set $bg-color 	         #111111
 set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #5294e2
+
+set $bd-color		     #84927D
+set $inactive-bd-color	 #383C4A
+set $text-color          #f3f4f5
+#				border			background		text                 indicator	child border
+client.focused          	$bd-color		$bg-color		$text-color          $bd-color	$bd-color
+client.unfocused        	$bg-color		$bg-color 		$inactive-text-color $bg-color	$bg-color
+client.focused_inactive         $bg-color		$bg-color	 	$inactive-text-color $bg-color	$bg-color
+client.urgent           	$bg-color   	        $bg-color		$text-color          $bg-color	$bg-color
+client.background  					$bg-color
 
 # change focus
 bindsym $mod+j focus left
