@@ -199,7 +199,7 @@ exec --no-startup-id xautolock -time 10 -locker blurlock
 exec --no-startup-id gnome-settings-daemon
 exec --no-startup-id guake
 exec --no-startup-id ~/redis-3.0.5/src/redis-server --daemonize yes
-exec --no-startup-id $HOME/script/wallpaper-randomizer.sh
+#exec --no-startup-id $HOME/script/wallpaper-randomizer.sh
 # where Pictures/Wallpapers is the directory you would want to get random wallpapers from
 exec_always --no-startup-id betterlockscreen -u ~/Pictures/Wallpapers
 
