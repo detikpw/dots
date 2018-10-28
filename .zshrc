@@ -8,6 +8,8 @@
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="refined"
+source ~/master/zsh-kubectl-prompt/kubectl.zsh
+
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -141,3 +143,20 @@ export SDKMAN_DIR="/home/hijup-dw/.sdkman"
 [[ -s "/home/hijup-dw/.sdkman/bin/sdkman-init.sh" ]] && source "/home/hijup-dw/.sdkman/bin/sdkman-init.sh"
 
 source ~/.privacy/hijup_env.sh
+
+# Flutter
+export PATH=~/master/flutter/bin:$PATH
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# fo [FUZZY PATTERN] - Open the selected file with the default editor
+# #   - Bypass fuzzy finder if there's only one match (--select-1)
+# #   - Exit if there's no match (--exit-0)
+ fo() {
+   local files
+     IFS=$'\n' files=($(fzf-tmux --query="(" --multi --select-1 --exit-0))
+       [[ -n "$files"  ]] && ${EDITOR:-vim} "${files[@]}"
+       }
+       ")"))
+ }
