@@ -1,1 +1,0 @@
-/home/hijup-dw/.vim/.vimrc
