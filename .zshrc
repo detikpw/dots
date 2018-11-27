@@ -98,12 +98,13 @@ export NVM_DIR="/home/hijup-dw/.nvm"
 
 alias dots='git --git-dir=$HOME/.dots.git/ --work-tree=$HOME'
 
+alias vim=vim.nox
 export EDITOR='vim'
 
 # Use tmuxinator
 source ~/tmuxinator.zsh
 
-alias k='kubectl'
+alias k='/snap/bin/kubectl'
 
 # git
  alias gpo='git push origin'
@@ -150,13 +151,9 @@ export PATH=~/master/flutter/bin:$PATH
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# fo [FUZZY PATTERN] - Open the selected file with the default editor
-# #   - Bypass fuzzy finder if there's only one match (--select-1)
-# #   - Exit if there's no match (--exit-0)
- fo() {
-   local files
-     IFS=$'\n' files=($(fzf-tmux --query="(" --multi --select-1 --exit-0))
-       [[ -n "$files"  ]] && ${EDITOR:-vim} "${files[@]}"
-       }
-       ")"))
- }
+
+[[ -e ~/.phpbrew/bashrc  ]] && source ~/.phpbrew/bashrc
+
+
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
