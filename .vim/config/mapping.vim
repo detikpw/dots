@@ -15,8 +15,8 @@ nnoremap <leader>- ddp
 nnoremap <leader>_ ddkP
 
 " switch tab
-nnoremap <S-right> :tabn<CR>
-nnoremap <S-left> :tabp<CR>
+nnoremap <leader> <right> :tabn<CR>
+nnoremap <leader> <left> :tabp<CR>
 
 " insert mode uppercase the current word
 "  <esc> : go to normal mode
@@ -50,6 +50,13 @@ nnoremap <leader>ev :split $MYVIMRC<cr>
 " Source MYVIMRC
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
+inoremap jj <esc>
+
+"split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 if g:hardcoreMode == 1
 
