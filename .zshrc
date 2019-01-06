@@ -98,7 +98,7 @@ export NVM_DIR="/home/hijup-dw/.nvm"
 
 alias dots='git --git-dir=$HOME/.dots.git/ --work-tree=$HOME'
 
-alias vim=vim.nox
+alias vim='vim.gtk'
 export EDITOR='vim'
 
 # Use tmuxinator
