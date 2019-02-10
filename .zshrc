@@ -150,6 +150,8 @@ export PATH=~/master/flutter/bin:$PATH
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='ag -l'
+
 
 
 [[ -e ~/.phpbrew/bashrc  ]] && source ~/.phpbrew/bashrc
@@ -157,3 +159,6 @@ export PATH=~/master/flutter/bin:$PATH
 
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
+
+
+alias py='python3.6'
