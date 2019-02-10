@@ -5,7 +5,6 @@ Plug 'tpope/vim-sensible'
 Plug 'junegunn/seoul256.vim'
 Plug 'tmhedberg/SimpylFold'
 Plug 'vim-scripts/indentpython.vim'
-Plug 'Valloric/YouCompleteMe' 
 Plug 'vim-syntastic/syntastic'
 Plug 'nvie/vim-flake8'
 Plug 'jnurmine/Zenburn'
@@ -16,7 +15,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'leshill/vim-json'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+Plug 'detikpw/fzf.vim'
 Plug 'SirVer/ultisnips'
 Plug 'w0rp/ale'
 Plug 'editorconfig/editorconfig-vim'
@@ -45,6 +44,7 @@ set foldlevel=99
 nnoremap <space> za
 
 nnoremap <C-p> :Files<Cr>
+imap <C-G> <plug>(fzf-complete-path-relative)
 
 au BufNewFile,BufRead *.py
     \ set tabstop=4 |
@@ -64,6 +64,7 @@ set encoding=utf-8
 let python_highlight_all=1
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 0
+let g:ale_completion_enabled = 1
 syntax on
 
 colorscheme zenburn
